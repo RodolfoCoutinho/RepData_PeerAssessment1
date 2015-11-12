@@ -1,6 +1,3 @@
----
-keep_md: true
----
 
 
 ```r
@@ -114,13 +111,7 @@ for (i in 1:nrow(activity_fill)){
     }
   
 }
-```
 
-```
-## Warning: closing unused connection 3 (file:activity.zip)
-```
-
-```r
 #sum the total number of steps of the filled dataframe
 total_steps_per_day<-aggregate(x=activity_fill$steps,by=list(activity_fill$date),sum)
 
