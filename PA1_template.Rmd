@@ -9,7 +9,7 @@ options(scipen=1, digits=2)
 The data comes from a csv file named Activity
 ```{r}
 #read the data from a csv file
-activity<-read.csv("activity.csv")
+activity<-read.csv("./activity.csv")
 ```
 <br/>
 <br/>

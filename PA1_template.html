@@ -68,7 +68,7 @@ library(dplyr)
 options(scipen=1, digits=2)</code></pre>
 <p>The data comes from a csv file named Activity</p>
 <pre class="r"><code>#read the data from a csv file
-activity&lt;-read.csv(&quot;activity.csv&quot;)</code></pre>
+activity&lt;-read.csv(&quot;./activity.csv&quot;)</code></pre>
 <p><br /> <br /> <br /> <strong>What is mean total number of steps taken per day?</strong></p>
 <pre class="r"><code>#sum the total number of steps
 total_steps_per_day&lt;-aggregate(x=activity$steps,by=list(activity$date),sum)
